@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Library</title>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+   <main>
+      <section id="heading">
+         <center><h1>Library App<span> using Javascript</span></h1></center>
+      </section>
+      <section class="add-dialog">
+         <button class="add" onclick="openForm()">Add Book</button>
+         <dialog id="openForm">
+            <center><h2>ENTER YOUR NEW BOOK!</h2></center>
+            <form action="">
+               <label for="bookName"> Book Title</label> 
+               <input type="text" name="bookName" id="bookName">
+               <label for="bookAuthor">Author</label> 
+               <input type="text" name="bookAuthor" id="bookAuthor">
+               <label for="bookPages">Pages</label> 
+               <input type="number" name="bookPages" id="bookPages">
+               <button id="submit-button" onclick="addBook()">Add Book</button>
+               <button id="close" class="close" onclick="closeForm()">Close</button>
+            </form>
+        </dialog>
+      </section>
+      <section class="library">
+         
+         <div id="grid-container">
+            <div class="row"></div>
+         </div>
+      </section>
+   </main>
+   <script src="script.js"></script>
+</body>
+</html>
