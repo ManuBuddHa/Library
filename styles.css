@@ -12,7 +12,6 @@ main{
    margin: auto;
    border-radius: 2vw;
    padding: 1vw;
-   flex-direction: column;
 }
 #heading{
    background-color: azure;
@@ -90,4 +89,11 @@ h2{
    margin-top: -1vh;
    color: red;
    text-decoration: underline black;
+}
+.library{
+   background-color: red;
+   margin-top: 1vh;
+}
+div > h2{
+   text-decoration: none;
 }
